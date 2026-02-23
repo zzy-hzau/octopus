@@ -28,7 +28,7 @@ class MultiSpeciesDataset(Dataset):
                 res=config.res,
                 output=config.output,
                 bw=None,
-                genomic_features=False,  # 🚨 DNA-only
+                genomic_features=False,  # DNA-only
                 use_aug=config.use_aug,
                 exclude_bed_path=None,
             )
