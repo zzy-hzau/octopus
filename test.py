@@ -43,7 +43,7 @@ class Config:
     hic_dir = data_path + f"/hic/{species}/"
 
     # Model Save Path
-    model_path = output_path + f'/saved_models/{model_species}/{model.__class__.__name__}_{genomic_features}/best_model.pth'
+    model_path = f'data/model_weights/cotton_best_model.pth'
     # Logs and Results Saving
     log_dir = output_path + f"/logs/{species}/{model.__class__.__name__}_{genomic_features}/{model_species}_model_test/"
     os.makedirs(log_dir, exist_ok=True)

@@ -274,14 +274,14 @@ def main():
 
     model = MappingModel(0, teacher_model=None).to(device)
     # model_name = model.__class__.__name__
-    model_path = f'/autodl-fs/data/Fine-tune_meta_test/all/train/all/saved_models/best_model.pth'
+    model_path = f'data/model_weights/Fine-tune_model.pth'
     model = get_mapping_model(model, model_path)
     model.eval()
 
     # load DNA
     from preprocess.data_feature import DNAFeature
-    data_path = f"data/select_species"
-    output_path = f"output/"
+    data_path = f"data/select_species/"
+    output_path = f"output/pre_cool/"
     genome_dir = os.path.join(data_path, args.species)
     fa_files = glob.glob(os.path.join(genome_dir, "*.fa")) + glob.glob(os.path.join(genome_dir, "*.fasta"))
     if len(fa_files) == 0:

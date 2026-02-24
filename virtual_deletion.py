@@ -287,7 +287,7 @@ if __name__ == '__main__':
 
     genomic_features = True if epi > 0 else False
 
-    model_path = output_path + f'/saved_models/{species}/{model_name}_{genomic_features}/best_model.pth'
+    model_path = f'data/model_weights/cotton_best_model.pth'
     model = get_model(model, model_path)
     model.eval()
 

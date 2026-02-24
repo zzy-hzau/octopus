@@ -47,7 +47,7 @@ class Config:
     # Training parameters
     num_workers = 4
     warmup_epochs = 10
-    batch_size = 3
+    batch_size = 4
     # Single card learning rate
     base_learning_rate = 2e-4
     # Adjusted learning rate
