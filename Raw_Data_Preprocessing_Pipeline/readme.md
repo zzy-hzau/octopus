@@ -22,7 +22,7 @@ Raw_Data_Preprocessing_Pipeline/
 
 ```
 
-## 🛠 Usage Instructions
+##  Usage Instructions
 
 ### ATAC-seq & ChIP-seq
 
