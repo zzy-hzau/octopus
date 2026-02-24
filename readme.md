@@ -107,8 +107,8 @@ If you want to train your own Octopus, please refer to the configuration class b
 | `results_file`    | `os.path.join(log_dir, "training_results.txt") if local_rank == 0 else None` | Training results file |
 | `plot_file`       | `os.path.join(log_dir, "training_plot.png") if local_rank == 0 else None`    | Training Loss Record Chart |
 | `plot_dis_path`   | `os.path.join(log_dir, "val_dis_plot.png") if local_rank == 0 else None`     | Layered Distance Correlation Plot |
-After configuring these parameters and files:
 
+After configuring these parameters and files:
 ```bash
 python train.py
 ```
