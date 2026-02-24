@@ -280,8 +280,8 @@ def main():
 
     # load DNA
     from preprocess.data_feature import DNAFeature
-    data_path = f"/root/autodl-fs/zs_data1/select_species"
-    output_path = f"/root/autodl-fs/pre_hic_output/zs_data1"
+    data_path = f"data/select_species"
+    output_path = f"output/"
     genome_dir = os.path.join(data_path, args.species)
     fa_files = glob.glob(os.path.join(genome_dir, "*.fa")) + glob.glob(os.path.join(genome_dir, "*.fasta"))
     if len(fa_files) == 0:
@@ -300,7 +300,7 @@ def main():
     for chrom in dna.chroms:
         t_chrom = time.time()
         chrom_length = dna.chrom_lengths[chrom]
-        # ===== merge init =====
+        # merge init
         n_bins = math.ceil(chrom_length / args.resolution)
         sum_arr, wsum_arr = allocate_accumulators(
             n_bins, args.band, dtype=np.float32

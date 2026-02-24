@@ -134,3 +134,6 @@ if GenomicDataset._is_position_excluded_static(chrom, seq_start, seq_start + win
                     continue
 ```
 # Section 6 : Whole genome prediction
+```bash
+python whole_chrom_prediction.py ----species cotton
+```
