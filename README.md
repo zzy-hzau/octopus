@@ -30,7 +30,6 @@ wget "https://github.com/conda-forge/miniforge/releases/download/24.11.3-0/Minif
 bash Miniforge3-$(uname)-$(uname -m).sh  # accept all terms and install to the default location
 rm Miniforge3-$(uname)-$(uname -m).sh  # (optionally) remove installer after using it
 source ~/.bashrc  # alternatively, one can restart their shell session to achieve the same result
-conda install -c conda-forge mamba
 ```
 
 ### 2. Clone the repository and create the environment
