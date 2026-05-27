@@ -150,6 +150,7 @@ class MoeModule(nn.Module):
             nn.ReLU()
         )
         self.weight = nn.Parameter(torch.rand(3,2688))
+
         self.conv_last = nn.Sequential(
             nn.Conv1d(hidden_dim, hidden_dim//2, 3, 2, 1),
             nn.BatchNorm1d(hidden_dim//2),
@@ -162,7 +163,7 @@ class MoeModule(nn.Module):
 
     def forward(self, seq, epi, cross):
         # Concatenated features as router input
-        concat_feat = cross  # [batch, 2*hidden_dim, seq_len]
+        concat_feat = cross  # [batch, hidden_dim, seq_len]
         crosses = self.conv_last(cross)
         ver = self.fla(crosses)
         # Expand dimensions for easier broadcasting
