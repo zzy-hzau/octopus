@@ -43,7 +43,7 @@ mamba activate 3D_chromatin
 
 ## Data Preparation
 
-To quickly get started, please download the example dataset [Example_data.tar.gz]() and place it under the `data/` directory.
+To quickly get started, please download the example dataset [Example_data.tar.gz](https://zenodo.org/records/18768612/files/Example_data.tar.gz?download=1) and place it under the `data/` directory.
 For raw data preprocessing, please refer to the [Raw Data Preprocessing Pipeline](https://github.com/zzy-hzau/octopus/tree/master/Raw_Data_Preprocessing_Pipeline).
 
 ## Training
